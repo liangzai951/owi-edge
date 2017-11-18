@@ -34,28 +34,44 @@ npm run dance
 
 # Supported Commands
 ```js
+// LED
 arm.turnLedOn();
 arm.turnLedOff();
+
+// Hand
 arm.stopHand();
 arm.openHand();
 arm.closeHand();
+
+// Wrist
 arm.stopWrist();
 arm.moveWristUp();
 arm.moveWristDown();
+
+// Elbow
 arm.stopElbow();
 arm.moveElbowUp();
 arm.moveElbowDown();
+
+// Shoulder
 arm.stopShoulder();
 arm.moveShoulderUp();
 arm.moveShoulderDown();
+
+// Base
 arm.stopBase();
 arm.moveBaseClockwise();
 arm.moveBaseCounterClockwise();
+
+// Stop all body parts
 arm.stopAll();
 ```
 
 # How it works
-The USB interface reads 3 bytes for commands. Each byte corresponds to a part of the robot arm. Setting a bit to 1 tells a body part to move. Clearing a bit tells that body part to stop. Setting multiple bits to 1 allows multiple body parts to move.
+The USB interface reads 3 bytes for commands. Each byte corresponds to a part of the robot arm.
+* Setting a bit to 1 tells a body part to move.
+* Setting a bit to 0 tells that body part to stop.
+* Setting multiple bits to 1 allows multiple body parts to move.
 
 <table>
   <tr>
@@ -137,7 +153,7 @@ npm run dance # with owi arm edge usb connected to computer
 ```
 
 # Author
-Lex Lacson
+[Lex Lacson](https://github.com/lexlacson)
 
 # License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

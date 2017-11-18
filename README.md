@@ -27,7 +27,7 @@ arm.stopAll(); // or arm.stopHand(); arm.turnLedOff();
 
 # Examples
 ```sh
-# from node_modules
+# after installing this package
 cd node_modules/owi-edge
 npm run dance
 ```
@@ -146,7 +146,7 @@ npm test
 
 # Development
 ```sh
-git clone <repo>
+git clone https://github.com/lexlacson/owi-edge.git
 npm install
 npm test
 npm run dance # with owi arm edge usb connected to computer

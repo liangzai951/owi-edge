@@ -140,7 +140,7 @@ npm run dance # with owi arm edge usb connected to computer
 Lex Lacson
 
 # License
-MIT
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 # Acknowledgements
 Special thanks to [this article](https://notbrainsurgery.livejournal.com/38622.html) for explaining how the USB interface works.

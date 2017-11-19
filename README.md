@@ -13,6 +13,8 @@ npm install owi-edge --save
 yarn add owi-edge
 ```
 
+This uses the [usb npm package](https://www.npmjs.com/package/usb) which uses `libusb` so you will need to build the usb drivers for your operating system. See the [usb npm package](https://www.npmjs.com/package/usb) for more details.
+
 # Usage
 ```js
 const Arm = require('owi-edge');

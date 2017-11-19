@@ -3,3 +3,6 @@ node_js:
   - "6"
   - "8"
   - "node"
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install libusb-1.0-0-dev

@@ -1,4 +1,6 @@
 # OWI Edge
+[![Build Status](https://travis-ci.org/lexlacson/owi-edge.svg?branch=master)](https://travis-ci.org/lexlacson/owi-edge) [![Coverage Status](https://coveralls.io/repos/github/lexlacson/owi-edge/badge.svg?branch=master)](https://coveralls.io/github/lexlacson/owi-edge?branch=master)
+
 Programmatically control your robot arm and rule the world!
 
 This driver assumes you are using the OWI-535 Robotic Arm Edge with USB Interface.

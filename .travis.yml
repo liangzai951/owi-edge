@@ -16,3 +16,6 @@ cache:
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install libudev-dev
+
+script:
+  - npm run test:ci

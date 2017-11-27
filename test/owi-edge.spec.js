@@ -1,7 +1,6 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
-import usb from 'usb';
-import Arm from '../lib/owi-edge';
+import mockery from 'mockery';
 import {
   MASKS,
 } from '../src/constants';
@@ -14,6 +13,23 @@ describe('OWI Edge', () => {
   let findByIdsStub;
   let controlTransferStub;
   let openSpy;
+  const usb = {
+    findByIds() {},
+  };
+  let Arm;
+
+  before(() => {
+    mockery.enable();
+    mockery.registerMock('usb', usb);
+
+    // dynamic require to get mocking to work
+    Arm = require('../lib/owi-edge'); // eslint-disable-line global-require
+  });
+
+  after(() => {
+    mockery.deregisterMock('usb');
+    mockery.disable();
+  });
 
   beforeEach(() => {
     controlTransferStub = sandbox.stub();

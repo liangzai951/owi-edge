@@ -1,6 +1,6 @@
 {
   "name": "owi-edge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rule the world with this OWI-535 Edge robot arm usb driver",
   "author": {
     "name": "Lex Lacson"

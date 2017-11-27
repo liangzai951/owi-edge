@@ -34,7 +34,6 @@
     "clean:node": "rm -rf node_modules",
     "dance": "node examples/robot-dance",
     "precommit": "npm run test:lint",
-    "prepare": "npm run build",
     "prepublishOnly": "npm run clean:all && npm install && npm test && npm run build",
     "prepush": "npm test",
     "test": "npm run build && npm run test:lint && npm run test:mocha",
